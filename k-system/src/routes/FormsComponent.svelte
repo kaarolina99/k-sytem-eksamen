@@ -11,9 +11,11 @@ function printConsoleLog(){
     console.log(navnInput, stedInput)
 }
 
-// function handleKeyDown(){
-
-// }
+function handleKeyDown(event){
+    if (event.keyCode === 13) {
+        console.log("Enter key was pressed");
+    }
+}
 
 </script>
 
@@ -29,6 +31,7 @@ function printConsoleLog(){
                 <label for="Navn"> Navn </label>
                 <br />
                 <input
+                    on:keydown={handleKeyDown}
                     type="text"
                     id="Navn_"
                     name="Navn"
@@ -40,6 +43,7 @@ function printConsoleLog(){
                 <label for="Sted"> Sted </label>
                 <br />
                 <input
+                on:keydown={handleKeyDown}
                     type="text"
                     id="Sted_"
                     name="Sted"
