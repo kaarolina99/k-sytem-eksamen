@@ -1,17 +1,15 @@
 <script>
     import QueueComponent from "./QueueComponent.svelte";
-    // import { addToQueue } from "./QueueComponent.svelte";
-    
+    // import {addToQueue} from "./QueueComponent.svelte";
+
+
     export let queueList
-    
+
     let navnInput = "";
     
     let stedInput = "";
-    
-    // function addToQueue() {
-        //     queueList.push({navn: navnInput, sted: stedInput})
-        // }
-    
+
+
         function handleSubmit(event){
             event.preventDefault();
             addToQueue(navnInput, stedInput);
@@ -23,7 +21,7 @@
             console.log("Enter key was pressed");
         }
     }
-    
+
     </script>
     
     

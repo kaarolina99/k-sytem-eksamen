@@ -1,16 +1,15 @@
 <script> 
 
+
 let queueList = [];
 
-// export let navnInput
-// export let stedInput
-
-    function addToQueue(navnInput, stedInput) {
+export function addToQueue(navnInput, stedInput) {
         queueList.push({navn: navnInput, sted: stedInput})
+        console.log("hallo")
     }
 
-</script>
 
+</script>
 
 <div class="queueGridContainer">
     <div class="queueGrid">
@@ -29,6 +28,9 @@ let queueList = [];
         </div>
     </div>
 </div>
+
+<!-- <FormC bind:addToQueue={addToQueue}/> -->
+
 
 <style>
 .queueGridContainer {
