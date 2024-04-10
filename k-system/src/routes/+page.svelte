@@ -1,13 +1,13 @@
 <script>
 // import QueueComponent from "./QueueComponent.svelte";
 import Navbar from "./Navbar.svelte";
-import FormsComponent from "./FormsComponent.svelte";
+import FormC from "./FormC.svelte";
 
 </script>
 
 <div>
 <Navbar></Navbar>
-<FormsComponent></FormsComponent>
+<FormC></FormC>
 </div>
 
 <style>

@@ -1,13 +1,13 @@
-<script>
+<script> 
 
-let queueList = [
-    { name: "Karolina", sted: "Amfiet" },
-    { name: "Julian", sted: "Utsikten" },
-    { name: "Sara", sted: "Blåbås" },
-    { name: "Henrik", sted: "Langbord" },
-    { name: "Erik", sted: "Grønnbås" },
-    { name: "Tidemann", sted: "Amfiet" },
-];
+let queueList = [];
+
+// export let navnInput
+// export let stedInput
+
+    function addToQueue(navnInput, stedInput) {
+        queueList.push({navn: navnInput, sted: stedInput})
+    }
 
 </script>
 
@@ -20,8 +20,8 @@ let queueList = [
                 <div class="queueItems">
                     {#each queueList as person}
                         <div class="queueItem">
-                            <p class="nameList">Navn: {person.name}</p> 
-                            <p class="place"> Sted: {person.sted}</p>
+                            <p class="navnPosition">Navn: {person.name}<p> 
+                            <p class="stedPosition"> Sted: {person.sted}</p>
                         </div>
                     {/each}
                 </div>
@@ -40,10 +40,10 @@ let queueList = [
 }
 
 .queueGrid {
-    border: 3px solid red;
+    border: 3px solid #E2BCF6;
     width: 400px;
     height: 400px;
-    background-color: white;
+    background-color: #ffb575;
     overflow: scroll;
 }
 
@@ -57,8 +57,11 @@ let queueList = [
     align-items: center;
 }
 
-.nameList{
+.navnPosition{
     margin-right: 20px;
 }
 
-</style>
+
+
+
+</style> 

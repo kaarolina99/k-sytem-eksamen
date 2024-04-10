@@ -15,8 +15,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: solid #ffb575 3px;
-    background-color: #E2BCF6;
+    border: solid #E2BCF6 3px;
+    background-color: #ffb575;;
     height: 70px;
     margin-bottom: 20px;
 }
